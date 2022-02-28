@@ -16,5 +16,13 @@ module.exports = {
       },
       'gatsby-plugin-mdx',
       `gatsby-plugin-emotion`,
+      {
+        resolve: `gatsby-source-wordpress`,
+        options: {
+          url:
+            process.env.WPGRAPHQL_URL ||
+            `https://lucashubbard.com/graphql`,
+        },
+      },
     ]
 }

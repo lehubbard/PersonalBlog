@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../../components/layout';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faSolid, faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import {graphql, Link} from 'gatsby';
 
 
@@ -29,25 +27,21 @@ function BlogShow( {data} ) {
                         </div> */}
                         
                         {
-                            data.allMdx.nodes.map(node => (
+                            data.allWpPost.nodes.map(node => (
                                 <div key={node.id} className='blog-post'>
                                     <div className='post-info'>
-                                        <h1>{node.title}</h1>
                                         <h2 className='post-title'>
                                         <Link to={`/blog/${node.slug}`}>
-                                                {node.frontmatter.title}  
+                                                {node.title}  
                                             </Link>
                                         </h2>
                                         <h3 className='date-tag'>
-                                            <span className='post-date'>{node.frontmatter.date}</span> |  
-                                            <span className='post-tag'> {node.frontmatter.tag}</span>
+                                            <span className='post-date'>{node.date}</span> |  
+                                            <span className='post-tag'> {node.categories.nodes[0].name}</span>
                                         </h3>
                                     </div>
                                 
-                                    <GatsbyImage
-                                        image={getImage(node.frontmatter.hero_image)}
-                                        alt={node.frontmatter.hero_image_alt}
-                                    />
+                                    <img className='featured-image-thumbnail' src={node.featuredImage.node.link}></img>
                                 </div>
                             ))
                         }
@@ -58,33 +52,30 @@ function BlogShow( {data} ) {
      );
 }
 
+
 export const query = (graphql`
 query {
-    allMdx(filter: {frontmatter: {page_type: {eq: "blog"}}} sort: {fields: frontmatter___date, order: DESC}) {
-      nodes {
-          timeToRead 
-        frontmatter {
-          date
-          title
-          tag
-          hero_image_alt
-          hero_image {
-            childImageSharp {
-              children {
-                id
-              }
-              gatsbyImageData
-            }
-          }
+  allWpPost {
+    nodes {
+      slug
+      date(formatString: "MMMM Do, YYYY")
+      featuredImage {
+        node {
+          id
+          altText
+          link
         }
-        
-        id
-        slug
+      }
+      title
+      categories {
+        nodes {
+          name
+        }
       }
     }
   }
-  
-`)
+}
+  `)
 
 
 export default BlogShow;

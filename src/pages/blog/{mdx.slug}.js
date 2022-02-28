@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Layout from '../../components/layout';
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MDXProvider } from "@mdx-js/react";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {fas, faCalendar, far, faClock} from '@fortawesome/free-solid-svg-icons'
@@ -11,8 +12,9 @@ function BlogPost({data}) {
     console.log(image)
     return ( 
         <Layout pageTitle={data.mdx.frontmatter.title}>
+    
             <div className='blog-post-single'>
-                <h1 className='page-header'>{data.mdx.frontmatter.title}</h1>
+                <h1 className='page-header'>{data.allWpPost.nodes.title}</h1>
                
                     <div className='blog-post-info-wrapper'>
                     <div className='blog-post-date'>
@@ -42,22 +44,40 @@ function BlogPost({data}) {
 }
 
 
-export const query = (graphql`
-  query($id: String) {
-    mdx(id: {eq: $id}) {
-      body
-      timeToRead
-      frontmatter {
-        title
-        date
+// export const query = (graphql`
+//   query($id: String) {
+//     mdx(id: {eq: $id}) {
+//       body
+//       timeToRead
+//       frontmatter {
+//         title
+//         date
         
-        hero_image {
-          childImageSharp {
-            gatsbyImageData
-          }
+//         hero_image {
+//           childImageSharp {
+//             gatsbyImageData
+//           }
+//         }
+//       }
+//     }
+//   }
+//   `)
+
+export const query = (graphql`
+query {
+  allWpPost {
+    nodes {
+      slug
+      date(formatString: "MMMM Do, YYYY")
+      featuredImage {
+        node {
+          id
         }
       }
+      title
     }
   }
+}
   `)
+
 export default BlogPost;

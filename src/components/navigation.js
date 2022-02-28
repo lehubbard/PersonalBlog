@@ -37,7 +37,7 @@ function Navigation() {
 
                         <ul id="dropdown-menu"> 
                             <li><Link to="/web-dev-portfolio">Web Development</Link></li>
-                            <li><Link to="/video-photo-portfolio">Photo & Video</Link></li>
+                            <li><Link to="/video-photo-portfolio">Filmmaking</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
@@ -71,7 +71,7 @@ function Navigation() {
                         : null
                         }>
                             <li ><Link to="/web-dev-portfolio" >Web Development</Link></li>
-                            <li ><Link to="/video-photo-portfolio">Photo & Video</Link></li>
+                            <li ><Link to="/video-photo-portfolio">Filmmaking</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
