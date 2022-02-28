@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-blog-blog-2-js",
-    "path": "/blog/blog2/",
-    "result": {"data":{"allMdx":{"nodes":[{"timeToRead":1,"frontmatter":{"date":"July 25, 2021","title":"Yet Another Post"},"id":"bd6870c3-6b22-59c9-8afd-ef11831d9e37"},{"timeToRead":1,"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"2285ab9a-8deb-51dd-8042-398e91cb091b"},{"timeToRead":1,"frontmatter":{"date":"July 23, 2021","title":"My First Post"},"id":"b4866941-dc02-52d8-a81e-609b24ca652f"}]}},"pageContext":{}},
-    "staticQueryHashes": ["3159585216"]}
