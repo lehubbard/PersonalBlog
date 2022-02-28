@@ -26,18 +26,20 @@ function IndexPage() {
 
           <div className="sectionTitle">
               <span className="yellowLine-right"></span>
-              <h2>Something About Me</h2>
+              <h2>Projects and More</h2>
               <span className="yellowLine-left"></span>
           </div>
           <div className="cards" id="card1">
               <div className="card">
+                <Link to="/web-dev-portfolio">
                   <h3 className="cardHeading">Web Development</h3>
+                </Link>
               </div>
               <div className="card" id="card2">
                   <div>
-                      <h3 className="cardHeading">Photography</h3>
-                      <h3 className="cardHeading">&</h3>
-                      <h3 className="cardHeading">Film</h3>
+                    <Link to="/video-photo-portfolio">
+                      <h3 className="cardHeading">Filmmaking</h3>
+                    </Link>
                   </div>
               </div>
               

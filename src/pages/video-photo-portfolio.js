@@ -13,7 +13,12 @@ function VideoPhotoPortfolio() {
                             <h2>My work in</h2>
                             <h1>Photography & Video</h1>
                         </div>
-                        <h3>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with: </h3>
+                        <h3>I’ve been creating videos for over seven years. In that time,
+                        I have worked professionally shooting weddings and real estate video. 
+                        I have also worked on music videos, narrative films, and short form documentaries. 
+                        I believe I have developed a unique style utilizing handheld closeups and natural light. Looking forward, 
+                        I would like to shoot more music videos and experiment with my style. I am available for hire as a 
+                        director/ cinematographer and as an editor.</h3>
                     </section>
 
                 <section className='video-list'>

@@ -15,7 +15,7 @@ function BlogShow( {data} ) {
                     
                     <section className='post-list'>
 
-                        <ul className='tag-list'>
+                        {/* <ul className='tag-list'>
                             <li>Tending The Wild</li>
                             <li>Web Dev</li>
                             <li>Other</li>
@@ -26,7 +26,7 @@ function BlogShow( {data} ) {
                                 <h3>Tags</h3>
                                 <span ><FontAwesomeIcon className='drop-down-icon' icon={faSolid, faAngleDown} /></span>
                             </div>
-                        </div>
+                        </div> */}
                         
                         {
                             data.allMdx.nodes.map(node => (
