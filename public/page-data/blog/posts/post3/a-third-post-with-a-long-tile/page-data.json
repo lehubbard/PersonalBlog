@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-mdx-slug-js",
+    "path": "/blog/posts/post3/a-third-post-with-a-long-tile/",
+    "result": {"data":{"allWpPost":{"nodes":[{"slug":"historic-uses-and-future-potential-of-glossy-buckthorn","date":"January 22nd, 2022","featuredImage":{"node":{"id":"cG9zdDoyNzM5"}},"title":"Historic Uses and Future Potential of Glossy Buckthorn"},{"slug":"what-is-nimble-infrastructure","date":"September 23rd, 2021","featuredImage":{"node":{"id":"cG9zdDoyNjMx"}},"title":"What is Nimble Infrastructure?"},{"slug":"how-to-make-a-natural-fiber-clothesline-that-stays-tight-and-wont-break","date":"September 6th, 2021","featuredImage":{"node":{"id":"cG9zdDoyNTU5"}},"title":"How to Make a Natural Fiber Clothesline That Stays Tight and Won’t Break"},{"slug":"keep-chickens-from-roosting-in-their-nesting-box","date":"September 11th, 2021","featuredImage":{"node":{"id":"cG9zdDoyNTY5"}},"title":"Keep Chickens from Roosting In Their Nesting Box"}]}},"pageContext":{"id":"8fffb737-23ae-5b68-8082-f92c19d16d7e","slug":"posts/post3/a-third-post-with-a-long-tile","__params":{"slug":"posts"}}},
+    "staticQueryHashes": []}

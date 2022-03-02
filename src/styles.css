@@ -443,6 +443,8 @@ body{
 }
 
 /* blog post list styles */
+
+
 .blog-posts-show{
     min-height: 100vh;
 }
@@ -542,6 +544,27 @@ padding: 1em
 
 /* blog post styles */
 
+.youtube-responsive-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+    }
+    
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    }
+
+.wp-block-image .aligncenter{
+    clear: both;
+    margin: 20px auto;
+}
+
 .blog-post-single{
     margin: 1em 20em 3em 20em;
     min-height: 50vh;
@@ -549,17 +572,26 @@ padding: 1em
     flex-direction: column;
 }
 
+.blog-post-single img{
+    padding: 1em 0;
+}
+
+.blog-post-single figcaption{
+    padding: 1em 0 1.5em 0;
+}
+
 .blog-post-single h2{
-    padding: 1em 0 0.5em 0;
+    padding-top: 1em;
     font-size: 2em;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
 .blog-post-single h3{
-    padding: 1em 0 0.5em 0;
+    padding-top: 1em;
     font-size: 1.5em;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
 .blog-post-single > p{
@@ -600,6 +632,19 @@ padding: 1em
     align-self: center;
     
 }
+
+.blog-post-hero-image{
+    padding: 1em 0;
+    max-width: 100%;
+}
+
+.blog-post-content p{
+    font-size: 1.5em;
+    line-height: 2;
+    padding: 1em 0;
+}
+
+
 /* about page styles */
 
 .about-page{
@@ -907,7 +952,40 @@ footer .socialArrow{
         
     }
 
+    .blog-post{
+        flex-direction: column;
+    }
+    .post-list{
+        padding: 0.5em 1em;
+        margin: 1em 1em 3em 1em;
+    }
+
+    .post-title{
+        padding-bottom: 0.5em;
+    }
+
+    .post-info{
+        text-align: center;
+    }
+
+    .blog-post img{
+        padding-top: 1em;
+    }
+
+    .blog-post-single{
+        margin: 1em 10em 3em 10em;
+    }
+
+    .tag-list{
+        display: none;
+    }
+
+    .show-tag-btn-wrapper{
+        display: flex;
+    }
+
 }
+
 
 @media (max-width: 1000px){
     .topNav ul{
@@ -956,38 +1034,7 @@ footer .socialArrow{
         grid-column: span 1;
         height: 30em;
     }
-    .post-list{
-        padding: 0.5em 1em;
-        margin: 1em 1em 3em 1em;
-    }
-
-    .post-title{
-        padding-bottom: 0.5em;
-    }
-
-    .blog-post{
-        flex-direction: column;
-    }
-
-    .post-info{
-        text-align: center;
-    }
-
-    .blog-post img{
-        padding-top: 1em;
-    }
-
-    .blog-post-single{
-        margin: 1em 10em 3em 10em;
-    }
-
-    .tag-list{
-        display: none;
-    }
-
-    .show-tag-btn-wrapper{
-        display: flex;
-    }
+   
 
     footer li{
         font-size: 2em;

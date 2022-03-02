@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---cache-dev-404-page-js",
     "path": "/dev-404-page/",
-    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/about/"},{"path":"/contact/"},{"path":"/"},{"path":"/video-photo-portfolio/"},{"path":"/web-dev-portfolio/"},{"path":"/blog/"},{"path":"/blog/posts/historic-uses-and-future-potential-of-glossy-buckthorn/"},{"path":"/blog/web-dev-portfolio/project1/project1/"},{"path":"/blog/posts/post3/a-third-post-with-a-long-tile/"},{"path":"/blog/web-dev-portfolio/project1-copy-2/project1/"},{"path":"/blog/about/about/"},{"path":"/blog/posts/post2/a-post-with-a-long-tile/"},{"path":"/blog/web-dev-portfolio/project1-copy/project1/"}]}},"pageContext":{}},
+    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/about/"},{"path":"/contact/"},{"path":"/"},{"path":"/video-photo-portfolio/"},{"path":"/web-dev-portfolio/"},{"path":"/blog/"},{"path":"/blog/what-is-nimble-infrastructure/"},{"path":"/blog/how-to-make-a-natural-fiber-clothesline-that-stays-tight-and-wont-break/"},{"path":"/blog/keep-chickens-from-roosting-in-their-nesting-box/"},{"path":"/blog/historic-uses-and-future-potential-of-glossy-buckthorn/"}]}},"pageContext":{}},
     "staticQueryHashes": []}
