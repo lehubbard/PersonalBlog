@@ -83,7 +83,7 @@ body{
     background: var(--cream);
 }
 
-.mainPageHeader{
+.main-page-header{
     background: url(images/forrest.jpg) center/cover;
     width:100%;
     height: 100vh;
@@ -112,7 +112,7 @@ body{
     display: none;
 }
 
-.mobileNav{
+.mobile-nav{
     transform: translate3d(-100vw, 0, 0);
     z-index: 1;
     position: absolute;
@@ -124,7 +124,7 @@ body{
     transition: transform 1s;
 }
 
-.mobileNav > ul{
+.mobile-nav > ul{
     padding-top: 1em;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ body{
     transform: translate3d(0, 0, 0);
 }
 
-.topNav{
+.top-nav{
     opacity: 0.9;
     z-index: 1;
     background: var(--dark-green);
@@ -210,12 +210,12 @@ body{
     
 }
 
-.topNav ul{
+.top-nav ul{
     display: flex;
     
 }
 
-.topNav li{
+.top-nav li{
     padding: 0.5em;
     font-size: 1.7em;
     font-family: 'Playfair Display SC', serif;
@@ -223,11 +223,11 @@ body{
     transition: 0.3s;
 }
 
-.topNav li:nth-child(n):hover{
+.top-nav li:nth-child(n):hover{
     color: var(--yellow-brown);
 }
 
-.topNav ul ul::before{
+.top-nav ul ul::before{
     content: "";
     width: 15px;
     height: 10px;
@@ -263,7 +263,7 @@ body{
     display: flex;
 }
 
-.topNav ul ul::after{
+.top-nav ul ul::after{
     content: '';
   position: absolute;
   top: 0;
@@ -302,7 +302,7 @@ body{
     transform: rotateZ(45deg);
 }
 
-.headerTitle{
+.header-title{
     text-align: center;
     font-size: 6em;
     color: var(--cream);
@@ -310,7 +310,7 @@ body{
     
 }
 
-.arrowTop{
+.arrow-top{
     background: var(--dark-green);
     border-radius: 100%;
     height: 15em;
@@ -324,12 +324,12 @@ body{
     cursor: pointer;
 }
 
-.arrowIcon{
+.arrow-icon{
     
     transform: rotate(180deg) scale(60%);
 }
 
-.arrowTop:hover .arrowIcon{
+.arrow-top:hover .arrow-icon{
     animation: bounce 0.5s;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-direction: alternate;
@@ -344,27 +344,27 @@ body{
     }
 }
 
-.sectionTitle{
+.section-title{
     display: flex;
     align-items: center;
     margin-top: 1em;
 }
 
-.sectionTitle h2{
+.section-title h2{
     font-size: 4em;
     color: var(--dark-green);
     padding: 0.5em;
     white-space: nowrap;
 }
 
-.yellowLine-left{
+.yellow-line-left{
     display: inline-block;
     width: 100%;
     height: 3px;
     background-color: var(--yellow-brown);
 }
 
-.yellowLine-right{
+.yellow-line-right{
     display: inline-block;
     width: 10%;
     height: 3px;
@@ -988,7 +988,7 @@ footer .socialArrow{
 
 
 @media (max-width: 1000px){
-    .topNav ul{
+    .top-nav ul{
         display: none;
     }
     .hamburger{
@@ -1000,15 +1000,15 @@ footer .socialArrow{
         cursor: pointer;
     }
     
-    .arrowTop{
+    .arrow-top{
         height: 10em;
         width: 10em;
     }
-    .arrowIcon{
+    .arrow-icon{
         transform: rotate(180deg) scale(40%);
     }
     
-    .arrowTop:hover .arrowIcon{
+    .arrow-top:hover .arrowIcon{
         animation: bounce 0.5s;
         animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
         animation-direction: alternate;
@@ -1023,7 +1023,7 @@ footer .socialArrow{
         }
     }
     
-    .sectionTitle h2{
+    .section-title h2{
         font-size: 3em;
     }
     .cards{
@@ -1059,15 +1059,15 @@ footer .socialArrow{
 }
 
 @media (max-width: 820px){
-    .headerTitle{
+    .header-title{
         padding-top: 20vh;
     }
 
-    .sectionTitle h2{
+    .section-title h2{
         font-size: 2em;
     }
     
-    .socialArrow{
+    .social-arrow{
         display: none;
     }
 
@@ -1112,10 +1112,10 @@ footer .socialArrow{
 
 
 @media (max-width: 575px){
-    .headerTitle{
+    .header-title{
         font-size: 4em;
     }
-    .sectionTitle h2{
+    .section-title h2{
         font-size: 1.7em;
     }
     .card {

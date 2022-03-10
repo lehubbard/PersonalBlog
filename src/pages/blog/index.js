@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Layout from '../../components/layout';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import {graphql, Link} from 'gatsby';
 
 

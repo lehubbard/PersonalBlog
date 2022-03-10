@@ -19,7 +19,7 @@ function Navigation() {
 
     return (
         <>
-            <nav className="topNav">
+            <nav className="top-nav">
                 <Link to="/">
                     <div id="logo">
                         <h2>L</h2>
@@ -44,7 +44,7 @@ function Navigation() {
                 </ul>
             </nav>
 
-            <nav className={showMobileMenu?"mobileNav show-mobile-nav":"mobileNav"}>
+            <nav className={showMobileMenu?"mobile-nav show-mobile-nav":"mobile-nav"}>
                 <span className='mobile-nav-exit' onClick={() => toggleMobileMenu()}>+</span>
                 <ul className='primary-mobile-links'>
                     <li><Link to="/">Home</Link></li>
