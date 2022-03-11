@@ -25,6 +25,7 @@ function WebDevPortfolio( {data} ) {
                     img={node.frontmatter.hero_image}
                     alt={node.frontmatter.hero_image_alt}
                     url={node.frontmatter.project_url}
+                    writeup={node.frontmatter.writeup}
                 />
                 )}
                 
@@ -37,9 +38,10 @@ function WebDevPortfolio( {data} ) {
 export default WebDevPortfolio;
 export const query = (graphql`
 query {
-    allMdx(filter: {frontmatter: {page_type: {eq: "web-dev-portfolio"}}} sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(filter: {frontmatter: {page_type: {eq: "web-dev-portfolio"}}} sort: {fields: frontmatter___date, order: ASC}) {
       nodes {
         frontmatter {
+          writeup
           project_url
           date
           title

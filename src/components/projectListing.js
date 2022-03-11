@@ -5,7 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import {Link} from 'gatsby';
 
-function ProjectListing( { title, desc, img, alt, url }) {
+function ProjectListing( { title, desc, img, alt, url, writeup }) {
     
     const [ref, inView] = useInView({
         threshold: 0.5,
@@ -22,9 +22,15 @@ function ProjectListing( { title, desc, img, alt, url }) {
                         {desc}
                     </MDXRenderer>
                 </p>
-                <Link to={url} target='_blank'>
-                    <div className='project-desc-btn'><span>View Project</span></div>
-                </Link>
+                <div className='project-btn-wrapper'>
+                    <Link to={url} target='_blank'>
+                        <div className='project-desc-btn'><span>View Project</span></div>
+                    </Link>
+                    {writeup !== null ? <Link to={writeup} target='_blank'>
+                        <div className='project-desc-btn'><span>Read About It</span></div>
+                    </Link>
+                    : null}
+                </div>
             </div>
             <div className='project-img'>
                 <div className='img-top-bar' css={inView

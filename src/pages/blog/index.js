@@ -54,7 +54,7 @@ function BlogShow( {data} ) {
 
 export const query = (graphql`
 query {
-  allWpPost {
+  allWpPost (sort: {fields: date, order: DESC}) {
     nodes {
       slug
       date(formatString: "MMMM Do, YYYY")
