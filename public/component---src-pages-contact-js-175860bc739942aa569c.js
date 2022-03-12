@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpersonal_blog=self.webpackChunkpersonal_blog||[]).push([[501],{5791:function(t,n,a){a.r(n);a(7294);var e=a(660),l=a(9021);n.default=function(){return(0,l.tZ)(e.Z,{pageTitle:"Contact"},(0,l.tZ)("div",{className:"contact-content fade-in-animation"},(0,l.tZ)("h2",null,"Get In Touch"),(0,l.tZ)("a",{href:"mailto: lehubbard@protonmail.com"},(0,l.tZ)("h1",null,"lehubbard@protonmail.com")," ")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-175860bc739942aa569c.js.map

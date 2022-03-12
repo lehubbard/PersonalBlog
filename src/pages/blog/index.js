@@ -40,7 +40,7 @@ function BlogShow( {data} ) {
                                         </h3>
                                     </div>
                                 
-                                    <img className='featured-image-thumbnail' src={node.featuredImage.node.link}></img>
+                                    <img className='featured-image-thumbnail' src={node.featuredImage.node.sourceUrl}></img>
                                 </div>
                             ))
                         }
@@ -62,7 +62,7 @@ query {
         node {
           id
           altText
-          link
+          sourceUrl
         }
       }
       title

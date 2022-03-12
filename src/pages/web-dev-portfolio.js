@@ -15,7 +15,7 @@ function WebDevPortfolio( {data} ) {
                         <h2>My work in</h2>
                         <h1>Web Development</h1>
                     </div>
-                    <h3>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with: </h3>
+                    <h3>I'm a front end developer with an eye for design and a background in information security. I’m interested in turning beautiful designs into fast, secure, and scalable websites. My focus has been on Gatsby, but I am always learning.</h3>
                 </section>
 
                 {data.allMdx.nodes.map( (node) => 

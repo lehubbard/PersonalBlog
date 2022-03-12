@@ -24,7 +24,7 @@ function VideoPhotoPortfolio() {
                 <section className="jam-sessions">
 
                     <h2>Jam Sessions</h2>
-                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to ha</p>
+                    <p>Jam Sessions were a series of live acoustic performances recorded between 2015 and 2017.</p>
                    
                     {
                         jamSessionData.map(video => (
