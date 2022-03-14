@@ -1,3 +1,4 @@
 # design documents
 /node_modules
 /.cache
+/src/images/original
