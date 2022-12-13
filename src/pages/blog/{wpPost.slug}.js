@@ -47,8 +47,8 @@ function BlogPost({data}) {
 
 
 export const query = (graphql`
-query($link: String) {
-    wpPost(link: {eq: $link}) {
+query($slug: String) {
+    wpPost(slug: {eq: $slug}) {
       featuredImage {
         node {
           altText

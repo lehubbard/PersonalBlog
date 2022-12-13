@@ -22,7 +22,7 @@ module.exports = {
         options: {
           url:
             process.env.WPGRAPHQL_URL ||
-            `https://lucashubbard.com/graphql`,
+            `https://lucashubbard.com/wordpress/graphql`,
         },
       },
     ]
