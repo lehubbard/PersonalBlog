@@ -22,35 +22,40 @@ function IndexPage() {
           </div>
 
       </header>
-      <section className="content" ref={contentRef}>
+      <main className="content" ref={contentRef}>
 
           <div className="section-title">
               <span className="yellow-line-right"></span>
-              <h2>Projects and More</h2>
+              <h2>About</h2>
               <span className="yellow-line-left"></span>
           </div>
-          <div className="cards" id="card1">
-              <div className="card">
-                <Link to="/web-dev-portfolio">
-                  <h3 className="card-heading">Web Development</h3>
-                </Link>
-              </div>
-              <div className="card" id="card2">
-                  <div>
-                    <Link to="/video-photo-portfolio">
-                      <h3 className="card-heading">Filmmaking</h3>
-                    </Link>
-                  </div>
-              </div>
-              
-              <Link to="/blog">
-              <div className="card" id='card3'>
-              <h3 className="card-heading">Blog</h3>
-              </div>
-              </Link>
-             
-          </div>
-      </section>
+
+          <section className='home-bio'>
+            <div className='profile-img-wrapper'>
+
+            </div>
+            <div className='home-bio-text'>
+              <p>jksdj sdfjsdfjksdfjklsdf jklsdf jksdfjklsdfjkljklsdfjkls dfjklsdfjklsdfjklsdfjksfdjkl sdfjklsdfjklsdfjklsdfjklsdf jklsdfjklsdfjklsdfjkls dfjklsdfjklsdf</p>
+              <ul className='skills'>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>Adobe CC</li>
+              </ul>
+            </div>
+          </section>
+          <section className='home-links-wrapper'>
+            <ul className='home-links'>
+              <li>Resume</li>
+              <li>Development</li>
+              <li>Video</li>
+            </ul>
+          </section>
+
+
+          
+      </main>
     </Layout>
    );
 }

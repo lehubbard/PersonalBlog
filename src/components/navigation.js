@@ -30,13 +30,12 @@ function Navigation() {
 
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
                     <li id="projects-link" >
                         Projects
 
                         <ul id="dropdown-menu"> 
-                            <li><Link to="/web-dev-portfolio">Web Development</Link></li>
+                            <li><Link to="/web-dev-portfolio">Development</Link></li>
                             <li><Link to="/video-photo-portfolio">Filmmaking</Link></li>
                         </ul>
                     </li>
@@ -48,7 +47,6 @@ function Navigation() {
                 <span className='mobile-nav-exit' onClick={() => toggleMobileMenu()}>+</span>
                 <ul className='primary-mobile-links'>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
                     <li className="mobile-dropdown-link"  
                         css={mobileDropdown 
@@ -70,7 +68,7 @@ function Navigation() {
                         `
                         : null
                         }>
-                            <li ><Link to="/web-dev-portfolio" >Web Development</Link></li>
+                            <li ><Link to="/web-dev-portfolio" >Development</Link></li>
                             <li ><Link to="/video-photo-portfolio">Filmmaking</Link></li>
                         </ul>
                     </li>
