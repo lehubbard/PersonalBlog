@@ -60,6 +60,7 @@ a{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 h1{
     font-family: 'Playfair Display SC', serif;
@@ -581,26 +582,29 @@ padding: 1em
 
 .blog-post-single figcaption{
     padding: 1em 0 1.5em 0;
+    font-family: 'Courier Prime', monospace;
 }
 
 .blog-post-single h2{
     padding-top: 1em;
     font-size: 2em;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Courier Prime', monospace;
 }
 
 .blog-post-single h3{
     padding-top: 1em;
     font-size: 1.5em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-weight: 600;
 }
 
 .blog-post-single > p{
+    
     font-size: 1.5em;
     margin-top: 2em;
     line-height: 2;
+    
 }
 
 .blog-post-single a{
@@ -646,9 +650,10 @@ padding: 1em
 }
 
 .blog-post-content p{
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 2.2;
     padding: 1em 0;
+    font-family: 'Courier Prime', monospace;
 }
 
 
