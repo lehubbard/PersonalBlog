@@ -50,7 +50,7 @@ a{
 
 /* Vars and Fonts */
 :root{
-    --dark-green: rgb(55, 65, 54);
+    --dark-green: #4a5349;
     --dark-green-trans: rgba(55, 65, 54, 0.9);
     --yellow-brown: rgb(144, 121, 74);
     --light-green: rgb(107, 121, 95);
@@ -1071,6 +1071,9 @@ footer .socialArrow{
         display: flex;
     }
 
+    .contact-content h1{
+        font-size: 3em;
+    }
 }
 
 
@@ -1156,11 +1159,12 @@ footer .socialArrow{
     }
     .goat-img{
         padding: 0;
+        max-width: 100vw;
     }
     .home-links li{
         padding: 1em;
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     .home-bio-text{
         width: 80vw;
@@ -1173,7 +1177,7 @@ footer .socialArrow{
         font-size: 2em;
     }
     
-    .social-arrow{
+    .socialArrow{
         display: none;
     }
 
@@ -1214,6 +1218,10 @@ footer .socialArrow{
     .video-list h2{
         font-size: 2em;
     }
+
+    .contact-content h1{
+        font-size: 2em;
+    }
 }
 
 
@@ -1251,6 +1259,12 @@ footer .socialArrow{
     }
     .video-wrapper{
         height: 30vh;
+    }
+    .contact-content h1{
+        font-size: 1em;
+    }
+    .contact-content h2{
+       margin: 0;
     }
 }
     
